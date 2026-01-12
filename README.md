@@ -1,9 +1,9 @@
-# Budget vs Actual & Forecasting Analysis (FP&A Style)
+# Budget vs Actual & Forecasting Analysis (FP&A)
 
 ## Summary
 This project has a real-world **Financial Planning & Analysis (FP&A)** workflow by forecasting demand, creating budgets, and analyzing performance variances using historical industrial production data.
 
-Applied forecasting techniques—**Linear Regression** and **ARIMA**—are used to:
+Applied forecasting techniquesn **Linear Regression** and **ARIMA** are used to:
 - Forecast future demand
 - Translate forecasts into budget assumptions
 - Compare actual performance against budget
