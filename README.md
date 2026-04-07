@@ -1,6 +1,7 @@
 # Budget vs Actual & Forecasting Analysis (FP&A)
 
-## Summary
+# **ON A BREAK**
+
 This project has a real-world **Financial Planning & Analysis (FP&A)** workflow by forecasting demand, creating budgets, and analyzing performance variances using historical industrial production data.
 
 Applied forecasting techniquesn **Linear Regression** and **ARIMA** are used to:
@@ -13,43 +14,12 @@ Since company-level revenue data is not publicly available, **industrial product
 
 ---
 
-## Business Problem
-FP&A teams repeatedly answer three critical questions:
 1. What do we expect performance to be? *(Forecasting)*
 2. What did we plan for? *(Budgeting)*
 3. Why did we over- or under-perform? *(Variance analysis)*
 
 ---
-
-## Dataset
-**Use-Based Monthly Indices of Industrial Production (IIP)**  
-- Frequency: Monthly  
-- Time span: ~8+ years  
-- Data type: Index-based production volumes  
-
-### Key Categories
-- Consumer Goods (Total) *(primary demand proxy)*
-- Consumer Durables
-- Consumer Non-Durables
-- Capital Goods
-- Basic Goods
-- Intermediate Goods
-
-> Revenue = Price × Volume  
-> This project focuses on the **volume side**, which is often the primary driver of forecasting uncertainty.
-
----
-
-## Methodology
-
-### 1. Data Preparation
-- Standardized inconsistent month formats 
-- Converted month column to a datetime index
-- Structured data for time-series forecasting
-
----
-
-### 2. Seasonality & Trend Analysis
+Seasonality & Trend Analysis
 - Analyzed long-term demand trends
 - Identified recurring monthly seasonality patterns
 
@@ -58,7 +28,7 @@ Seasonality reinforces the need for monthly-level budgeting and continuous perfo
 
 ---
 
-### 3. Forecasting Models
+### Forecasting Models
 
 #### Linear Regression (ML Perspective)
 - Predictor: Time index
@@ -111,44 +81,14 @@ To explain *why* variance occurred, key categories were analyzed as drivers:
 - Capital Goods
 - Intermediate Goods
 
-Techniques used:
-- Feature standardization
-- Correlation analysis
-- Regression-based attribution
 
-**Key Finding:**  
 Consumer durables exhibit the strongest relationship with budget variance, indicating demand cyclicality as the primary driver.
 
 ---
 
-## Key Insights
 - Growth-based budgets are effective for strategic planning
 - Monthly variance is largely demand-driven, not assumption failure
 - Linear regression supports long-term planning
 - ARIMA enhances short-term forecast control
 - Combining models improves FP&A decision support
 
----
-
-## Tools
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Statsmodels
-- Matplotlib
-
----
-
-## Business Relevance
-This project mirrors real FP&A activities including:
-- Demand forecasting
-- Budget formulation
-- Performance variance tracking
-- Driver-based business explanation
-
-It demonstrates both **technical forecasting skills** and **finance-oriented analytical thinking**.
-
----
-
-## Conclusion
-> The budget accurately reflects long-term demand growth, while short-term variances are driven primarily by consumer durables volatility. Regression models support strategic planning, and ARIMA enhances short-term forecast control.
